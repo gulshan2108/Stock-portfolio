@@ -70,8 +70,9 @@ const Stock = ({data}) => {
                             <div className='progress-bg'>
                                 {
                                     data.return > 0 ?
-                                    <div className='positive' style={{width:data?.portfoli_percent}}/> :
-                                    <div className='negative' style={{width:data?.portfoli_percent+'%',marginLeft:50-data?.portfoli_percent+'%'}}/>
+                                    <div className='positive' style={{width:data?.return/2+'%'}}/> :
+                                    <div className='negative' style={{width:Math.abs(data.return)/2+'%', marginLeft:50-Math.abs(data?.return)/2+'%'}}>
+                                    </div>
                                 }
                             </div>
                         </div>
