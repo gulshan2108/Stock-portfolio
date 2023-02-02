@@ -12,7 +12,7 @@ const StockList = () => {
 
     const {stockData} = useSelector((state)=>{
       return{
-        stockData: state?.stock?.stockData
+        stockData: state?.stock?.stockData.mockdata
       }
     })
 
@@ -25,16 +25,16 @@ const StockList = () => {
     }
 
     useEffect(()=>{
-        if(stockData?.data){
+        if(stockData){
             let MFData=0, ETFData=0
-            setStockList(stockData?.data)
-            stockData?.data?.foreach((data,i)=>{
+            setStockList(stockData)
+            for(var i in stockData){
                 if(i<4){
-                    MFData=MFData+data?.portfoli_percent
+                    MFData=MFData+stockData[i]?.portfoli_percent
                 }else{
-                    ETFData=ETFData+data?.portfoli_percent
+                    ETFData=ETFData+stockData[i]?.portfoli_percent
                 }
-            })
+            }
             setGraphData([MFData,ETFData])
         }
     },[stockData])

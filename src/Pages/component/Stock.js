@@ -69,7 +69,7 @@ const Stock = ({data}) => {
                             className={`${data.return >= 0 ? 'positive': 'negative'}`} 
                             min={-100}
                             max={100}
-                            value={data.return}
+                            defaultValue={data.return}
                         />
                     </div>
                     <div className='d-flex flex-column'>

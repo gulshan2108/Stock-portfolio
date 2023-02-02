@@ -6,7 +6,7 @@ import * as TYPES from './Stocks.type'
 function* getStocks() {
     try {
         const result = yield call(getStockApi);
-        yield put({ type: TYPES.SUCCESS , payLoad: result });
+        yield put({ type: TYPES.SUCCESS , payLoad: result.data });
     } catch (e) {
         yield put({ type: TYPES.ERROR, message: e });
     }

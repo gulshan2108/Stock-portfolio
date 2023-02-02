@@ -1,7 +1,7 @@
-import Service from './Service'
+import axios from 'axios'
 
 export const getStockApi = async() => {
     try{
-        return await Service.get('/mockdata')
+        return axios.get('../../db.json')
     }catch(e){}
 }
