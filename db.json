@@ -1,0 +1,82 @@
+{
+    "mockdata": [
+        {
+            "type": "ITOT",
+            "total_amount": 283,
+            "stock_type": "USA Equity",
+            "script": "AADR",
+            "quantity": 430,
+            "price": 50.30,
+            "avg_cost": 41.75,
+            "invasted_amt": 17952.07,
+            "portfoli_percent": 22.06,
+            "unrealizedPL": 3676.93,
+            "return": 20.48
+        },
+        {
+            "type": "EFA",
+            "total_amount": 68.9,
+            "stock_type": "Developed Market Equity",
+            "script": "MFEM",
+            "quantity": 210,
+            "price": 23.20,
+            "avg_cost": 22.50,
+            "invasted_amt": 4725.84,
+            "portfoli_percent": 5.81,
+            "unrealizedPL": 146.16,
+            "return": 3.09
+        },
+        {
+            "type": "ITOT",
+            "total_amount": 72.3,
+            "stock_type": "USA Equity",
+            "script": "JPEM",
+            "quantity": 328,
+            "price": 52.50,
+            "avg_cost": 56.70,
+            "invasted_amt": 18597.60,
+            "portfoli_percent": 22.86,
+            "unrealizedPL": -1377.60,
+            "return": -7.41
+        },
+        {
+            "type": "EFA",
+            "total_amount": 28.3,
+            "stock_type": "Developed Market Equity",
+            "script": "KEMQ",
+            "quantity": 801,
+            "price": 20.40,
+            "avg_cost": 22.24,
+            "invasted_amt": 7811.04,
+            "portfoli_percent": 21.89,
+            "unrealizedPL": -1470.64,
+            "return": -8.26
+        },
+        {
+            "type": "ITOT",
+            "total_amount": 22.5,
+            "stock_type": "USA Equity",
+            "script": "KLDW",
+            "quantity": 523,
+            "price": 32.90,
+            "avg_cost": 26.32,
+            "invasted_amt": 13765.36,
+            "portfoli_percent": 16.92,
+            "unrealizedPL": 3441.34,
+            "return": 25.00
+        },
+        {
+            "type": "EFA",
+            "total_amount": 88,
+            "stock_type": "Developed Market Equity",
+            "script": "KOIN",
+            "quantity": 335,
+            "price": 25.40,
+            "avg_cost": 25.40,
+            "invasted_amt": 8509.00,
+            "portfoli_percent": 10.46,
+            "unrealizedPL": -0,
+            "return": 0.00
+        }
+    ]
+}
