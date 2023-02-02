@@ -17,8 +17,12 @@ const StockList = () => {
     })
 
     useEffect(()=>{
-      dispatch(getStocks())
-    },[]) // eslint-disable-next-line react-hooks/exhaustive-deps
+      getStocksList()
+    },[])
+
+    const getStocksList=()=>{
+        dispatch(getStocks())
+    }
 
     useEffect(()=>{
         if(stockData?.data){
