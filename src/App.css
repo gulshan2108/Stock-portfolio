@@ -80,4 +80,94 @@ input[type=range]::-webkit-slider-thumb {
     position: relative;
     top: 3px;
   }
+.unrealized-progress .negative .progress-bar {
+    margin-left: -50%;
+    background-color: red;
+    margin-right: 50%;
+}
+.unrealized-progress .positive .progress-bar {
+    background-color: #00bd59;
+    margin-left: 50%;
+}
+.unrealized-progress .progress-bg {
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 50px;
+    height: 8px;
+    position: relative;
+}
+.unrealized-progress .progress-bg .positive {
+    background-color: #00bd59;
+    margin-left: 50%;
+    height: 8px;
+    position: absolute;
+}
+.unrealized-progress .progress-bg .negative {
+    background-color: red;
+    height: 8px;
+    position: absolute;
+}
   
+
+/* Responsive CSS */
+@media screen and (max-width: 900px) {
+    .stock-left-data.align-items-center {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .stock-left-data .left-container {
+        width: 100%;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .stock-left-data .left-container div {
+        width: 50%;
+    }
+    .stock-left-data .left-container div:first-child {
+        width: 10%;
+    }
+    .stock-left-data .left-container div:nth-child(2) {
+        text-align: left !important;
+        width: 35%;
+    }
+    .stock-left-data .left-container .share-type {
+        flex-grow: 0 !important;
+    }
+    .stock-right-data {
+        width: 100%;
+    }
+    .stock-right-data.d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin: 0 !important;
+        gap: 20px;
+    }
+    .stock-right-data .stock-right-1,
+    .stock-right-data .stock-right-2,
+    .stock-right-data .stock-right-3,
+    .stock-right-data .stock-right-4 {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .stock-right-data .stock-right-2 .small,
+    .stock-right-data .stock-right-3 .small  {
+        justify-content: space-between;
+    }
+    .stock-right-data .stock-right-4 {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px;
+    }
+    .stock-right-data .stock-right-4 button {
+        width: 50%;
+        margin: 0 !important;
+    }
+    .m-width-50 {
+        width: 50%;
+    }
+    .m-width-50.me-4 {
+        margin: 0 !important;
+    }
+}
