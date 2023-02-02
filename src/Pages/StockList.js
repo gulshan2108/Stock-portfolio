@@ -18,13 +18,13 @@ const StockList = () => {
 
     useEffect(()=>{
       dispatch(getStocks())
-    },[]) 
+    },[]) // eslint-disable-next-line react-hooks/exhaustive-deps
 
     useEffect(()=>{
         if(stockData?.data){
             let MFData=0, ETFData=0
             setStockList(stockData?.data)
-            stockData?.data?.map((data,i)=>{
+            stockData?.data?.foreach((data,i)=>{
                 if(i<4){
                     MFData=MFData+data?.portfoli_percent
                 }else{

@@ -1,4 +1,4 @@
-import { call, put, takeEvery, all, fork } from "redux-saga/effects";
+import { call, put, takeEvery, all } from "redux-saga/effects";
 import { getStockApi } from "../Api/StocksApi"
 import * as TYPES from './Stocks.type'
 
